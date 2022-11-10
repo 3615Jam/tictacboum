@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Boum !</title>
+        <link rel="stylesheet" type="text/css" href="tictacboum.css" />
+        <script src="tictacboum.js" defer></script>
+        <!-- ----------[ no-ui-slider-module ]---------- -->
+        <link rel="stylesheet" href="../00-utilities/nouislider/noUiSlider-15.6.1/dist/nouislider.css" />
+        <script src="../00-utilities/nouislider/noUiSlider-15.6.1/dist/nouislider.js"></script>
+        <!-- ----------[ wnumb-module ]---------- -->
+        <script src="../00-utilities/wnumb/wnumb-1.2.0/wNumb.js"></script>
+    </head>
+    <body>
+        <header><h1>Tic Tac Boum !</h1></header>
+        <main>
+            <!-- <section>
+                <fieldset>
+                    <legend>Test Double Slider</legend>
+                    <div id="slider_test"></div>
+                </fieldset>
+            </section> -->
+            <section id="preferences_zone">
+                <fieldset>
+                    <legend>Préférences</legend>
+                    <div id="sliders_zone"></div>
+                    <div id="time_values_zone">
+                        <div>
+                            <label for="time_min">Temps minimum : </label><br />
+                            <input id="time_min_value" type="text" value="" disabled /><br />
+                            <input id="time_min" type="range" min="10" max="60" value="30" oninput="getTimer()" />
+                        </div>
+                        <div>
+                            <label for="time_max">Temps maximum : </label><br />
+                            <input id="time_max_value" type="text" value="" disabled /><br />
+                            <input id="time_max" type="range" min="20" max="120" value="90" oninput="getTimer()" />
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+            <section id="timer_zone">
+                <fieldset>
+                    <legend>Timer</legend>
+                    <div id="centered_wrapper">
+                        <div>
+                            <img id="bomb" src="img/bomb.png" />
+                        </div>
+                        <div>
+                            <button id="launch_timer" onclick="launchTimer()">Launch Timer</button>
+                            <button id="clear_timer" onclick="clearTimer()" style="display: none">Clear Timer</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+        </main>
+    </body>
+</html>

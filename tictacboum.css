@@ -1,0 +1,52 @@
+/* * {
+    border: 1px solid red;
+} */
+
+section {
+    margin: 3rem;
+}
+
+fieldset {
+    padding: 3rem;
+}
+
+/* #sliders_zone {
+    position: relative;
+    min-height: 50px;
+} */
+
+#time_values_zone {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #c6c6c6;
+    pointer-events: none;
+} */
+
+/* #time_min::-moz-range-thumb {
+    background: green;
+    cursor: pointer;
+}
+
+#time_max::-moz-range-thumb {
+    background: red;
+    cursor: pointer;
+} */
+
+#centered_wrapper > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bomb {
+    width: 50%;
+}

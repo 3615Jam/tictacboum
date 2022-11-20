@@ -11,18 +11,27 @@ section {
     margin: 3rem;
 }
 
-fieldset {
+/* fieldset {
     padding: 3rem;
-}
+} */
 
 /* #sliders_zone {
     position: relative;
     min-height: 50px;
 } */
 
+.info_zone {
+    width: 50%;
+}
+
+.visibility {
+    display: none;
+}
+
 #time_values_zone {
     display: flex;
     justify-content: space-between;
+    margin: 3rem;
 }
 
 /* input[type="range"] {

@@ -24,17 +24,17 @@
             </section> -->
             <section id="preferences_zone">
                 <fieldset>
-                    <legend>Préférences</legend>
-                    <div id="sliders_zone"></div>
-                    <div id="time_values_zone">
+                    <legend><button id="pref" onclick="togglePrefVisibility()">Préférences</button></legend>
+                    <!-- <div id="sliders_zone"></div> -->
+                    <div id="time_values_zone" class="visibility">
                         <div>
                             <label for="time_min">Temps minimum : </label><br />
-                            <input id="time_min_value" type="text" value="" disabled /><br />
+                            <input id="time_min_value" class="info_zone" type="text" value="" disabled /><br />
                             <input id="time_min" type="range" min="10" max="60" value="30" oninput="getTimer()" />
                         </div>
                         <div>
                             <label for="time_max">Temps maximum : </label><br />
-                            <input id="time_max_value" type="text" value="" disabled /><br />
+                            <input id="time_max_value" class="info_zone" type="text" value="" disabled /><br />
                             <input id="time_max" type="range" min="20" max="120" value="90" oninput="getTimer()" />
                         </div>
                     </div>

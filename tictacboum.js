@@ -3,6 +3,7 @@ const timeMin = document.getElementById("time_min");
 const timeMax = document.getElementById("time_max");
 const timeMinValue = document.getElementById("time_min_value");
 const timeMaxValue = document.getElementById("time_max_value");
+const timeValuesZone = document.getElementById("time_values_zone");
 const launchTimerButton = document.getElementById("launch_timer");
 const clearTimerButton = document.getElementById("clear_timer");
 const bombElement = document.getElementById("bomb");
@@ -12,6 +13,12 @@ const boomSound = new Audio("sounds/boom.mp3");
 // définition des variables
 let randomTime;
 let timer;
+
+// gestion de l'affichage de la zone de préférences
+function togglePrefVisibility() {
+    timeValuesZone.classList.toggle("visibility");
+    console.log("test pref");
+}
 
 /**
  * Fonction qui a pour but de retourner un entier compris entre 'min' et 'max' inclus

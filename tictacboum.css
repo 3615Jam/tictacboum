@@ -21,17 +21,22 @@ section {
 } */
 
 .info_zone {
-    width: 50%;
-}
-
-.visibility {
-    display: none;
+    width: 1.5rem;
+    text-align: center;
 }
 
 #time_values_zone {
     display: flex;
-    justify-content: space-between;
-    margin: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#time_values_zone p {
+    text-align: center;
+}
+
+#time_values_zone.visibility {
+    display: none;
 }
 
 /* input[type="range"] {

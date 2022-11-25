@@ -40,8 +40,8 @@ function getRandomTime(min, max) {
  *      - définir la durée du timer (en millisecondes) grâce à la fonction 'getRandomTime()'
  */
 function getTimer() {
-    timeMinValue.value = timeMin.value + " secondes";
-    timeMaxValue.value = timeMax.value + " secondes";
+    timeMinValue.value = timeMin.value;
+    timeMaxValue.value = timeMax.value;
 
     // --------------------------------------------
     // ... test in progress ...

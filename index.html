@@ -8,10 +8,10 @@
         <link rel="stylesheet" type="text/css" href="tictacboum.css" />
         <script src="tictacboum.js" defer></script>
         <!-- ----------[ no-ui-slider-module ]---------- -->
-        <link rel="stylesheet" href="../00-utilities/nouislider/noUiSlider-15.6.1/dist/nouislider.css" />
-        <script src="../00-utilities/nouislider/noUiSlider-15.6.1/dist/nouislider.js"></script>
+        <!-- <link rel="stylesheet" href="../00-utilities/nouislider/noUiSlider-15.6.1/dist/nouislider.css" /> -->
+        <!-- <script src="../00-utilities/nouislider/noUiSlider-15.6.1/dist/nouislider.js"></script> -->
         <!-- ----------[ wnumb-module ]---------- -->
-        <script src="../00-utilities/wnumb/wnumb-1.2.0/wNumb.js"></script>
+        <!-- <script src="../00-utilities/wnumb/wnumb-1.2.0/wNumb.js"></script> -->
     </head>
     <body>
         <header><h1>Tic Tac Boum !</h1></header>
@@ -27,16 +27,16 @@
                     <legend><button id="pref" onclick="togglePrefVisibility()">Préférences</button></legend>
                     <!-- <div id="sliders_zone"></div> -->
                     <div id="time_values_zone" class="visibility">
-                        <div>
-                            <label for="time_min">Temps minimum : </label><br />
-                            <input id="time_min_value" class="info_zone" type="text" value="" disabled /><br />
+                        <p>
+                            <label for="time_min">Temps minimum : </label>
+                            <input id="time_min_value" class="info_zone" type="text" value="" disabled /> secondes<br />
                             <input id="time_min" type="range" min="10" max="60" value="30" oninput="getTimer()" />
-                        </div>
-                        <div>
-                            <label for="time_max">Temps maximum : </label><br />
-                            <input id="time_max_value" class="info_zone" type="text" value="" disabled /><br />
+                        </p>
+                        <p>
+                            <label for="time_max">Temps maximum : </label>
+                            <input id="time_max_value" class="info_zone" type="text" value="" disabled /> secondes<br />
                             <input id="time_max" type="range" min="20" max="120" value="90" oninput="getTimer()" />
-                        </div>
+                        </p>
                     </div>
                 </fieldset>
             </section>

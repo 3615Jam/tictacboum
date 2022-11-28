@@ -31,8 +31,13 @@ section {
     align-items: center;
 }
 
-#time_values_zone p {
+#time_values_zone > p {
     text-align: center;
+    /* width: 250px; */
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #time_values_zone.visibility {
@@ -68,4 +73,11 @@ section {
 
 #bomb {
     width: 50%;
+}
+
+/* responsive */
+@media screen and (max-width: 480px) {
+    #time_values_zone {
+        flex-direction: column;
+    }
 }
